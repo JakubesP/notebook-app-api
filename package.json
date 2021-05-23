@@ -1,0 +1,16 @@
+{
+  "name": "notebook-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --prefix api",
+    "debug": "npm run debug --prefix api",
+    "up": "docker-compose --env-file 3rd-services.env up -d",
+    "stop": "docker-compose stop",
+    "down": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
