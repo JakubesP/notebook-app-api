@@ -15,7 +15,7 @@ git clone https://github.com/JakubesP/notebook-app-api
 cd notebook-app-api
 ```
 #### env files
-In the `server` notebook-app-api, create a `3rd-services.env` file. It should take the following form:
+In the `notebook-app-api` directory, create a `3rd-services.env` file. It should take the following form:
 ```sh
 # mongo
 MONGO_INITDB_ROOT_USERNAME=root
@@ -27,7 +27,7 @@ MONGO_PASSWORD=secret
 # redis
 REDIS_PASSWORD=secret
 ```
-Create also `app.env` file. It should take the following form:
+Create also `app.env` file inside the same direcotry. It should take the following form:
 ```sh
 PORT=3000
 NODE_ENV=development
@@ -45,7 +45,6 @@ REDIS_PASSWORD=secret
 UPLOADS_STORAGE=aws 
 # or local (then you need to create uploads dir in api folder)
 
-# 2MB
 UPLOAD_BYTES_LIMIT=2000000
 
 SESSION_SECRET=secret
